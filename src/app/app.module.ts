@@ -15,7 +15,8 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { CartComponent } from './cart/cart.component';
 //import { BasicSnackbarComponent } from './basic-snackbar/basic-snackbar.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-
+import {MatBadgeModule } from '@angular/material/badge';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +34,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatButtonModule,
     HttpClientInMemoryWebApiModule,
     MatSnackBarModule,
+    MatBadgeModule,
+    FormsModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
